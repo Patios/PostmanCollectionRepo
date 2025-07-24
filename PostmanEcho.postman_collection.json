@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "5dad1ad8-ffdf-4442-9128-d0d627fd74cb",
+		"_postman_id": "6dbdf60c-0f76-4c6d-87e2-814764427d5a",
 		"name": "PostmanEcho",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "47048252",
-		"_collection_link": "https://patiosmac-6609326.postman.co/workspace/Patryk's-Workspace~7e2489a5-71e6-41c8-856a-3ca75b261114/collection/47048252-5dad1ad8-ffdf-4442-9128-d0d627fd74cb?action=share&source=collection_link&creator=47048252"
+		"_collection_link": "https://patiosmac-6609326.postman.co/workspace/7e2489a5-71e6-41c8-856a-3ca75b261114/collection/47048252-6dbdf60c-0f76-4c6d-87e2-814764427d5a?action=share&source=collection_link&creator=47048252"
 	},
 	"item": [
 		{
@@ -93,6 +93,16 @@
 						"type": "text/javascript",
 						"packages": {}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"console.info(\"run PostmanEchoVIP\")"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
 				}
 			],
 			"request": {
@@ -121,6 +131,28 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"console.info(\"Collection log\")"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
 		}
 	],
 	"variable": [
