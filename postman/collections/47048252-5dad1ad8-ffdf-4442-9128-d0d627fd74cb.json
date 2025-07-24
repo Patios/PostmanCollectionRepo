@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "47048252-5dad1ad8-ffdf-4442-9128-d0d627fd74cb",
+		"name": "PostmanEcho",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PostmanEchoVIP",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bef5a235-96df-4dbf-b945-db47edd820dd",
+						"exec": [
+							"pm.test(\"Basic tests\",function(){",
+							"",
+							"const response = pm.response.json();",
+							"// Test for status code",
+							"pm.response.to.have.status(200);",
+							"",
+							"// Test for response time",
+							"pm.expect(pm.response.responseTime).to.be.below(600);",
+							"",
+							"// Test for response content type",
+							"pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');",
+							"",
+							"// Test for 'args' object existence and properties",
+							"pm.expect(response.args).to.exist;",
+							"pm.expect(response.args).to.have.all.keys('id', 'type');",
+							"",
+							"// Test for 'id' and 'type' properties",
+							"pm.expect(response.args.id).to.be.a('string');",
+							"pm.expect(response.args.type).to.be.a('string');",
+							"",
+							"// Test for 'headers' object existence",
+							"pm.expect(response.headers).to.exist;",
+							"",
+							"// Test for 'url' field existence",
+							"pm.expect(response).to.have.property('url').that.is.a('string');",
+							"});",
+							"",
+							"",
+							"",
+							"pm.test(\"Response has required fields in the 'headers' object\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.headers).to.exist;",
+							"    pm.expect(responseData.headers).to.include.keys('host', 'x-request-start', 'connection', 'x-forwarded-proto', 'x-forwarded-port', 'x-amzn-trace-id', 'user-agent', 'accept', 'cache-control', 'postman-token', 'accept-encoding', 'cookie');",
+							"});",
+							"",
+							"",
+							"pm.test(\"The 'id' and 'type' properties must be non-empty strings\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.args).to.have.all.keys('id', 'type');",
+							"    ",
+							"    ['id', 'type'].forEach(function(key) {",
+							"        pm.expect(responseData.args[key]).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, `${key} should not be empty`);",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response headers include 'Content-Length'\", function () {",
+							"    pm.expect(pm.response.headers.has('Content-Length')).to.be.true;",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate the structure of the 'headers' object\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.headers).to.exist.and.to.be.an('object');",
+							"",
+							"    const headers = responseData.headers;",
+							"    const headerKeys = [\"host\", \"x-request-start\", \"connection\", \"x-forwarded-proto\", \"x-forwarded-port\", \"x-amzn-trace-id\", \"user-agent\", \"accept\", \"cache-control\", \"postman-token\", \"accept-encoding\", \"cookie\"];",
+							"    ",
+							"    headerKeys.forEach(function(key) {",
+							"        pm.expect(headers).to.have.property(key);",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response time is within an acceptable range of 100ms to 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.above(100).and.to.be.below(500);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "47048252-be0993e5-58b0-48b2-bb94-234a102782d6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://postman-echo.com/get?{{Id}}=123&type=VIP",
+					"protocol": "{{protocol}}",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "{{Id}}",
+							"value": "123"
+						},
+						{
+							"key": "type",
+							"value": "VIP"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "Id",
+			"value": "id",
+			"type": "default"
+		}
+	]
+}
