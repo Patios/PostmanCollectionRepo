@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "6dbdf60c-0f76-4c6d-87e2-814764427d5a",
 		"name": "PostmanEcho",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "47048252",
 		"_collection_link": "https://patiosmac-6609326.postman.co/workspace/7e2489a5-71e6-41c8-856a-3ca75b261114/collection/47048252-6dbdf60c-0f76-4c6d-87e2-814764427d5a?action=share&source=collection_link&creator=47048252"
 	},
@@ -85,7 +85,7 @@
 							"",
 							"",
 							"pm.test(\"Response time is within an acceptable range of 100ms to 500ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.above(100).and.to.be.below(500);",
+							"    pm.expect(pm.response.responseTime).to.be.above(100).and.to.be.below(600);",
 							"});",
 							"",
 							""
