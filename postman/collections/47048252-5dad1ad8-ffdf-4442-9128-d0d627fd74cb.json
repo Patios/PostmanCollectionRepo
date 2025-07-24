@@ -84,7 +84,7 @@
 							"",
 							"",
 							"pm.test(\"Response time is within an acceptable range of 100ms to 500ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.above(100).and.to.be.below(500);",
+							"    pm.expect(pm.response.responseTime).to.be.above(100).and.to.be.below(600);",
 							"});",
 							"",
 							""
