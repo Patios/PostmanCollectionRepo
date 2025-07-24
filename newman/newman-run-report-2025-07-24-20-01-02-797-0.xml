@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PostmanEcho" tests="1" time="0.665">
+  <testsuite name="PostmanEchoVIP" id="61444592-d19b-4195-9126-11e769ada20c" timestamp="2025-07-24T20:01:01.921Z" tests="6" failures="4" errors="0" time="0.665">
+    <testcase name="Basic tests" time="0.665" classname="PostmanEchoVip">
+      <failure type="AssertionFailure" message="expected 665 to be below 600">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 5dad1ad8-ffdf-4442-9128-d0d627fd74cb.]]>
+        <![CDATA[Collection name: PostmanEcho.]]>
+        <![CDATA[Request name: PostmanEchoVIP.]]>
+        <![CDATA[Test description: Basic tests.]]>
+        <![CDATA[Error message: expected 665 to be below 600.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 665 to be below 600
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has required fields in the 'headers' object" time="0.665" classname="PostmanEchoVip">
+      <failure type="AssertionFailure" message="expected { host: 'postman-echo.com', …(10) } to contain keys 'host', 'x-request-start', 'connection', 'x-forwarded-proto', 'x-forwarded-port', 'x-amzn-trace-id', 'user-agent', 'accept', 'cache-control', 'postman-token', 'accept-encoding', and 'cookie'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 5dad1ad8-ffdf-4442-9128-d0d627fd74cb.]]>
+        <![CDATA[Collection name: PostmanEcho.]]>
+        <![CDATA[Request name: PostmanEchoVIP.]]>
+        <![CDATA[Test description: Response has required fields in the 'headers' object.]]>
+        <![CDATA[Error message: expected { host: 'postman-echo.com', …(10) } to contain keys 'host', 'x-request-start', 'connection', 'x-forwarded-proto', 'x-forwarded-port', 'x-amzn-trace-id', 'user-agent', 'accept', 'cache-control', 'postman-token', 'accept-encoding', and 'cookie'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { host: 'postman-echo.com', …(10) } to contain keys 'host', 'x-request-start', 'connection', 'x-forwarded-proto', 'x-forwarded-port', 'x-amzn-trace-id', 'user-agent', 'accept', 'cache-control', 'postman-token', 'accept-encoding', and 'cookie'
+   at Object.eval sandbox-script.js:2:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="The 'id' and 'type' properties must be non-empty strings" time="0.665" classname="PostmanEchoVip"/>
+    <testcase name="Response headers include 'Content-Length'" time="0.665" classname="PostmanEchoVip"/>
+    <testcase name="Validate the structure of the 'headers' object" time="0.665" classname="PostmanEchoVip">
+      <failure type="AssertionFailure" message="expected { host: 'postman-echo.com', …(10) } to have property 'cookie'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 5dad1ad8-ffdf-4442-9128-d0d627fd74cb.]]>
+        <![CDATA[Collection name: PostmanEcho.]]>
+        <![CDATA[Request name: PostmanEchoVIP.]]>
+        <![CDATA[Test description: Validate the structure of the 'headers' object.]]>
+        <![CDATA[Error message: expected { host: 'postman-echo.com', …(10) } to have property 'cookie'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { host: 'postman-echo.com', …(10) } to have property 'cookie'
+   at Object.eval sandbox-script.js:5:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is within an acceptable range of 100ms to 500ms" time="0.665" classname="PostmanEchoVip">
+      <failure type="AssertionFailure" message="expected 665 to be below 600">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 5dad1ad8-ffdf-4442-9128-d0d627fd74cb.]]>
+        <![CDATA[Collection name: PostmanEcho.]]>
+        <![CDATA[Request name: PostmanEchoVIP.]]>
+        <![CDATA[Test description: Response time is within an acceptable range of 100ms to 500ms.]]>
+        <![CDATA[Error message: expected 665 to be below 600.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 665 to be below 600
+   at Object.eval sandbox-script.js:6:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>
