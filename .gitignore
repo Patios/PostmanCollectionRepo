@@ -3,3 +3,5 @@
 .idea/modules.xml
 .idea/vcs.xml
 .idea/PostmanCollectionRepo.iml
+output/gitlabSSH
+output/gitlabSSH.pub
