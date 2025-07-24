@@ -1,0 +1,2 @@
+level: info, messages: Collection log
+level: info, messages: run PostmanEchoVIP
