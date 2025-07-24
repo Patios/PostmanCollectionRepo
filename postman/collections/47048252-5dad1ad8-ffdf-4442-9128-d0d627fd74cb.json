@@ -137,6 +137,30 @@
 			"response": []
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "824ef686-11ac-4d4f-9f6a-d18698541dc3",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"console.info(\"Collection log\")"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "536d3e93-8d8e-4b97-8d15-89dce5397a21",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
 			"key": "Id",
