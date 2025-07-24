@@ -92,6 +92,17 @@
 						"type": "text/javascript",
 						"packages": {}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e868e882-b802-4f80-ac7e-606790d7a80f",
+						"exec": [
+							"console.info(\"run PostmanEchoVIP\")"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
 				}
 			],
 			"id": "47048252-be0993e5-58b0-48b2-bb94-234a102782d6",
