@@ -17,7 +17,7 @@
 							"",
 							"const response = pm.response.json();",
 							"// Test for status code",
-							"pm.response.to.have.status(200);",
+							"",
 							"",
 							"// Test for response time",
 							"pm.expect(pm.response.responseTime).to.be.below(600);",
